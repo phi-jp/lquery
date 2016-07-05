@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html>
+	<head>
+	</head>
+	<body>
+		<h1>TEST</h1>
+
+	</body>
+</html>
+
+<script src="../src/lquery.js"></script>
+<script>
+
+var body = $('body');
+var ul = body.create('ul', true);
+
+for (var i=0; i<10; ++i) {
+	var li = ul.create('li', true);
+	li.html = 'list ' + i;
+}
+
+var h = $('h1');
+console.log(h);
+
+</script>
